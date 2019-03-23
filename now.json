@@ -1,0 +1,26 @@
+{
+  "name": "Terminal As A Service",
+  "alias": [
+    "lab",
+    "cmd",
+    "mind",
+    "society",
+    "terminal",
+    "taas",
+    "terminalAPI",
+    "termAPI",
+    "testTerm",
+    "testTerminal",
+    "terminalAsAService",
+    "terminalAsAServiceAPI"
+  ],
+  "version": 2,
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" },
+    { "src": "api/api.js", "use": "@now/node-server" }
+  ],
+  "routes": [{ "src": "/api/(.*)", "dest": "api/api.js" }],
+  "github": {
+    "silent": true
+  }
+}
